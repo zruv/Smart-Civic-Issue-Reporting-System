@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicReport - Modern Issue Tracking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body class="bg-gray-900 text-gray-300 font-sans antialiased">
+
+    <!-- Animated Gradient Background -->
+    <div class="background-gradient"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-20 transition-all duration-300" id="header">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">CivicReport</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#report-issue" class="nav-link">Report</a>
+                <a href="#track-complaint" class="nav-link">Track</a>
+            </div>
+            <a href="#report-issue" class="hidden md:block btn-primary group">
+                <span>Report an Issue</span>
+                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800/90 backdrop-blur-sm p-4">
+            <a href="#how-it-works" class="block py-2 text-white">How It Works</a>
+            <a href="#report-issue" class="block py-2 text-white">Report</a>
+            <a href="#track-complaint" class="block py-2 text-white">Track</a>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight animate-on-scroll">
+                        Fix Your City, <br> Faster Than Ever.
+                    </h1>
+                    <p class="text-lg text-gray-400 mt-6 max-w-xl mx-auto animate-on-scroll" style="animation-delay: 200ms;">
+                        A seamless, transparent way for citizens to report infrastructure issues and for authorities to manage them effectively.
+                    </p>
+                    <div class="mt-10 flex justify-center gap-4 animate-on-scroll" style="animation-delay: 400ms;">
+                        <a href="#report-issue" class="btn-primary btn-lg group">
+                            <span>File a Report</span>
+                            <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                        <a href="#track-complaint" class="btn-secondary btn-lg group">
+                            <span>Track a Complaint</span>
+                            <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="text-4xl font-bold text-white mb-4 animate-on-scroll">A Process You Can Trust</h2>
+                    <p class="text-gray-400 animate-on-scroll" style="animation-delay: 150ms;">Three simple steps to make a real impact in your community.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 mt-16 text-center">
+                    <!-- Step 1 -->
+                    <div class="card-styled animate-on-scroll">
+                        <div class="card-icon">1</div>
+                        <h3 class="text-xl font-bold text-white mt-4">Submit a Report</h3>
+                        <p class="text-gray-400 mt-2">Snap a photo, add a location, and describe the issue. It takes less than a minute.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="card-styled animate-on-scroll" style="animation-delay: 200ms;">
+                        <div class="card-icon">2</div>
+                        <h3 class="text-xl font-bold text-white mt-4">Authority Notified</h3>
+                        <p class="text-gray-400 mt-2">Your report is automatically routed to the correct municipal department for review.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="card-styled animate-on-scroll" style="animation-delay: 400ms;">
+                        <div class="card-icon">3</div>
+                        <h3 class="text-xl font-bold text-white mt-4">Track to Resolution</h3>
+                        <p class="text-gray-400 mt-2">Receive a unique ID to track your report's status from start to finish.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Issue Reporting Form Section -->
+        <section id="report-issue" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="form-container animate-on-scroll">
+                    <h2 class="text-3xl font-bold text-white text-center mb-8">File a New Report</h2>
+                    <form id="issue-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="form-control">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="john.doe@example.com" required>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="form-control">
+                                <label for="issue-type">Issue Type</label>
+                                <select id="issue-type" required>
+                                    <option value="">Select Issue Type</option>
+                                    <option>Pothole</option>
+                                    <option>Garbage Dump</option>
+                                    <option>Broken Streetlight</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <label for="severity">Severity Level</label>
+                                <select id="severity" required>
+                                    <option value="">Select Severity</option>
+                                    <option>Low</option>
+                                    <option>Medium</option>
+                                    <option>High</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <label for="issue-image">Upload Photo</label>
+                            <input type="file" id="issue-image" accept="image/*" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="description">Description</label>
+                            <textarea id="description" rows="3" placeholder="Provide a brief description..." required></textarea>
+                        </div>
+                        <div class="form-control">
+                            <label for="address">Address / Landmark</label>
+                            <input type="text" id="address" placeholder="Near the old water tank on Main St" required>
+                        </div>
+                        <div class="form-control">
+                            <label>Location</label>
+                            <button type="button" id="get-location" class="btn-secondary group">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <span>Get Current Location</span>
+                            </button>
+                            <p id="location-display" class="text-sm mt-2 text-gray-400"></p>
+                        </div>
+                        <div class="pt-4">
+                            <button type="submit" class="btn-primary w-full btn-lg group">
+                                <span>Submit Securely</span>
+                                <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complaint Status Tracker Section -->
+        <section id="track-complaint" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="text-4xl font-bold text-white mb-4 animate-on-scroll">Track Your Complaint</h2>
+                    <p class="text-gray-400 animate-on-scroll" style="animation-delay: 150ms;">Enter the complaint ID you received upon submission to see its current status.</p>
+                </div>
+                <div class="max-w-md mx-auto mt-8 animate-on-scroll" style="animation-delay: 300ms;">
+                    <form id="status-form">
+                        <div class="relative">
+                            <input type="text" id="complaint-id" placeholder="Enter your Complaint ID" class="w-full" required>
+                            <button type="submit" class="btn-primary absolute right-2 top-1/2 -translate-y-1/2 group">
+                                <span>Track</span>
+                                <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Status Display Area -->
+                <div id="status-results" class="max-w-2xl mx-auto mt-10">
+                    <!-- Status card will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 mt-16 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2025 CivicReport. A new standard in civic engagement.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

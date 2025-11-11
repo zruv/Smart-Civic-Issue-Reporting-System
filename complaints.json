@@ -1,0 +1,15 @@
+[
+  {
+    "id": "CIV-1762808448720",
+    "timestamp": "2025-11-10T21:00:48.720Z",
+    "name": "Sachin",
+    "email": "goyalsachin@gmail.com",
+    "issueType": "Pothole",
+    "severity": "Medium",
+    "description": "Reporting of a pot hole",
+    "address": "IIT Paschim Vihar",
+    "location": "Not provided",
+    "imagePath": "/uploads/1762808448715-pothole.jpg",
+    "status": "Submitted"
+  }
+]
