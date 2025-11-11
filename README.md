@@ -25,4 +25,3 @@ The Smart Civic Issue Reporting System is a web-based platform designed to empow
 2.  Run `npm install` to install the dependencies.
 3.  Run `node server.js` to start the server.
 4.  Open `index.html` in your browser.
-# Smart-Civic-Issue-Reporting-System
